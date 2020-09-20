@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before{
+    margin:0px;
+    padding:0px;
+    box-sizing: inherit;
+}
+.container-fluid{
+    max-width: 100%;
+    box-shadow: 10px solid #666161;
+    z-index: 100;
+    height: 500px;
+    
+}
+
+.card-body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:250px;
+}
+.gno{
+    box-sizing: 150px;
+    font-size:100px;
+    box-shadow: 5px solid rgb(53, 51, 51);
+
+
+}
+.players{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+}
+.card{
+margin:1rem;
+height:400px;
+}
+.resultbtn{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding:10px;
+    font-size:1.8rem;
+    position: fixed;
+    right:50px;
+    bottom:50px;
+    font-weight:400;
+    border-radius:5px;
+
+}
+.resultbtn:hover{
+    border-color: #abcbec;
+    background-color: #73a4d8;
+
+}
+
+
+button {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    position: relative;
+    width: 500px;
+}
+
+.popup button {
+    background-color: #fff;
+    color: rebeccapurple;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#apre{
+    font-size: 35px;
+    font-weight:500;
+    color: #e26565;
+}
+.anim {
+    position: fixed;
+    top: -1vh;
+    font-size: 1rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}

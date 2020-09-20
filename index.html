@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">LotteryGame</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="section1">
+            <div class="container my-3">
+                <h1 class="card-header">Welcome to LotteryGame</h1>
+                <div class="card-body">
+                    <h3 class="card-title">Click on the button below to generate your Lucky Number</h3>
+                    <button id="button" class="btn btn-primary" onclick="myfunction()">Generate Your Number</button>
+                    <div class="gno" id="generate"></div>
+                </div>
+                <h3 id="declare">Participants Are :-</h3>
+                <div class="players" id="playing">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/585e4bcdcb11b227491c3396.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" id="givenNo">17</p>
+                            <p class="card-text">NAME 1</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/585e4bcdcb11b227491c3396.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" id="givenNo">19</p>
+                            <p class="card-text">NAME 2</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/585e4bcdcb11b227491c3396.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" id="givenNo">14</p>
+                            <p class="card-text">NAME 3</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="resultbtn" id="showResult">Show Result</button>
+
+            <div class="popup-container" id="container">
+                <div class="popup"> 
+                    <button id="close">&times;</button>
+                    <div id="apre">Congratulation!!!</div>
+                    <div id="showing"></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>
